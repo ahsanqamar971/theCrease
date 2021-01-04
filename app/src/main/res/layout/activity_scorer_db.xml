@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.dashboards.ScorerDBActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@drawable/news_text_bg"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amiko"
+            android:textSize="15sp"
+            android:id="@+id/profile"
+            android:text="Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:background="@drawable/news_text_bg"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amiko"
+            android:textSize="15sp"
+            android:id="@+id/notifications"
+            android:text="Notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amiko"
+            android:textSize="15sp"
+            android:background="@drawable/news_text_bg"
+            android:id="@+id/score"
+            android:text="Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/profileLayout"
+        layout="@layout/scorer_profile_layout"/>
+
+    <include android:id="@+id/notifyLayout"
+        android:visibility="gone"
+        layout="@layout/scorer_notify_layout"/>
+
+    <include android:id="@+id/scoreLayout"
+        android:visibility="gone"
+        layout="@layout/scorer_scorelayout"/>
+
+</LinearLayout>

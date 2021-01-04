@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:weightSum="6"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/srNo"
+        android:textSize="13sp"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Sr. No"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/team1TV"
+        android:textSize="13sp"
+        android:layout_width="0dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="T1"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/team2TV"
+        android:layout_width="0dp"
+        android:textSize="13sp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="T2"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="0dp"
+        android:textSize="13sp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Date"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:textSize="13sp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Time"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/venue"
+        android:layout_width="0dp"
+        android:textSize="13sp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Venue"
+        android:textColor="@color/black" />
+
+</LinearLayout>

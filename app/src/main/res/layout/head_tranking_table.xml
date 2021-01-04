@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:weightSum="5"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/posTV"
+        android:fontFamily="@font/cantata_one"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="PoS"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/teamTV"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Team"
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/matchTV"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/cantata_one"
+        android:gravity="center"
+        android:text="M"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/ptsTV"
+        android:layout_width="0dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Pts"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/ratingTV"
+        android:fontFamily="@font/cantata_one"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Rating"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

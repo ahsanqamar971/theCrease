@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f4f4f4">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/profileImage"
+            android:src="@drawable/dummy_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_toStartOf="@id/profileImage"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="start|center"
+                    android:text="Name: "
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/name"
+                    android:gravity="start|center"
+                    android:text="Admin"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:drawableStart="@drawable/ic_baseline_pin_drop_24"
+                android:id="@+id/city"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:gravity="start|center"
+                android:text="Lahore"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:id="@+id/email"
+                android:layout_marginTop="10dp"
+                android:drawablePadding="10dp"
+                android:gravity="start|center"
+                android:text="abc@example.com"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:drawableStart="@drawable/ic_baseline_local_phone_24"
+                android:id="@+id/number"
+                android:drawablePadding="10dp"
+                android:gravity="start|center"
+                android:text="+921234567890"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="start|center"
+                    android:text="Age: "
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/age"
+                    android:gravity="start|center"
+                    android:text="23 Years"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="start|center"
+                    android:text="Role: "
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/role"
+                    android:gravity="start|center"
+                    android:text="Admin"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="start|center"
+                    android:text="Gender: "
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/gender"
+                    android:gravity="start|center"
+                    android:text="Male"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/educationTV"
+                    android:gravity="start|center"
+                    android:text="Education: "
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/education"
+                    android:gravity="start|center"
+                    android:text="Bachelor"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/experienceTV"
+                    android:gravity="start|center"
+                    android:text="Experience: "
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/experience"
+                    android:gravity="start|center"
+                    android:text="5 Years"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/playerRoleLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:gravity="start|center"
+                    android:text="Player Role: "
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/playerRole"
+                    android:gravity="start|center"
+                    android:text="All-rounder"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/batHandLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/batHandTV"
+                    android:gravity="start|center"
+                    android:text="Bat Hand: "
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/batHand"
+                    android:gravity="start|center"
+                    android:text="Right"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/bowlHandLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/bowlHandTV"
+                    android:gravity="start|center"
+                    android:text="Bowl Hand: "
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/bowlHand"
+                    android:gravity="start|center"
+                    android:text="Right"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/batTypeLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/batTypeTV"
+                    android:gravity="start|center"
+                    android:text="Bat Type: "
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/batType"
+                    android:gravity="start|center"
+                    android:text="Opener"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/bowlTypeLayout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/bowlTypeTV"
+                    android:gravity="start|center"
+                    android:text="Bowl Type: "
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/bowlType"
+                    android:gravity="start|center"
+                    android:text="Opener"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/cantata_one"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/accept"
+            android:background="@android:color/holo_green_dark"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="Accept"
+            android:elevation="10dp"
+            android:layout_margin="10dp"
+            android:layout_width="0dp"
+            android:layout_height="30dp"/>
+
+        <Button
+            android:id="@+id/reject"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_red_dark"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            android:textColor="@color/white"
+            android:text="Reject"
+            android:layout_width="0dp"
+            android:layout_height="30dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.StartMatchActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@id/startMatch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="0.3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="Date:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="0.7"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:fontFamily="@font/cantata_one"
+                    android:gravity="center"
+                    android:id="@+id/date"
+                    android:hint="DD"
+                    android:inputType="number"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/et_background" />
+                <EditText
+                    android:fontFamily="@font/cantata_one"
+                    android:gravity="center"
+                    android:id="@+id/month"
+                    android:hint="MM"
+                    android:inputType="number"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/et_background" />
+                <EditText
+                    android:fontFamily="@font/cantata_one"
+                    android:gravity="center"
+                    android:id="@+id/year"
+                    android:hint="YYYY"
+                    android:inputType="number"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/et_background" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="Overs:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <EditText
+                android:fontFamily="@font/cantata_one"
+                android:gravity="start|center"
+                android:id="@+id/overs"
+                android:paddingStart="10dp"
+                android:hint="Enter here"
+                android:layout_weight="0.5"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_background" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="Venue:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <EditText
+                android:fontFamily="@font/cantata_one"
+                android:gravity="start|center"
+                android:id="@+id/addVenue"
+                android:paddingStart="10dp"
+                android:hint="Enter here"
+                android:layout_weight="0.5"
+                android:inputType="textCapWords"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_background" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="Toss:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_weight="0.5"
+                android:id="@+id/tossRG"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/team1"
+                    android:layout_weight="1"
+                    android:text="Team1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/team2"
+                    android:layout_weight="1"
+                    android:text="Team2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="Bat First:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_weight="0.5"
+                android:id="@+id/batFirstRG"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/batTeam1"
+                    android:layout_weight="1"
+                    android:text="Team1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/batTeam2"
+                    android:layout_weight="1"
+                    android:text="Team2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_above="@+id/editBtn"
+            android:layout_alignParentTop="true"
+            android:weightSum="2"
+            android:id="@+id/squadLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/team1Squad"
+                    android:background="@drawable/news_text_bg"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cantata_one"
+                    android:textSize="14sp"
+                    android:text="Team 1 XI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/team1SquadRV"
+                    tools:listitem="@layout/default_squad_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/team2Squad"
+                    android:background="@drawable/news_text_bg"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/cantata_one"
+                    android:textSize="14sp"
+                    android:text="Team 2 XI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/team2SquadRV"
+                    tools:listitem="@layout/default_squad_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/startMatch"
+        android:text="Start Match"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

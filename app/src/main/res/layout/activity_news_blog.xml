@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.news.NewsFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/articleTitle"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:fontFamily="@font/cantata_one"
+            android:textColor="@color/black"
+            android:text="Ian Gold: Modern umpires have thrown away their ego"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/articleImage"
+                android:src="@drawable/dummy_image"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"/>
+
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:padding="10dp"
+                android:fontFamily="@font/amiko"
+                android:id="@+id/articleCategory"
+                android:background="@drawable/righttext_bg"
+                android:text="Category"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:padding="5dp"
+            android:background="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:id="@+id/writerName"
+                android:background="@drawable/lefttext_bg"
+                android:text="Adeel Aslam"
+                android:textColor="@color/white"
+                android:fontFamily="@font/amiko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:padding="10dp"
+                android:id="@+id/dateTimeTV"
+                android:background="@drawable/righttext_bg"
+                android:text="23 May"
+                android:fontFamily="@font/amiko"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:padding="10dp"
+            android:id="@+id/articleDesc"
+            android:text="Head of his first series as Pakistan's new ODI captain, Babar Azam has said he wants to see aggressive and fearless cricket from his side as they embark on their ICC Men's Cricket World Cup Super League campaign."
+            android:fontFamily="@font/amiko"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:fontFamily="@font/cantata_one"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:text="Related Articles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.github.islamkhsh.CardSliderViewPager
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewPager"
+            app:cardSlider_indicator="@id/indicator"
+            app:auto_slide_time="5"/>
+
+        <com.github.islamkhsh.CardSliderIndicator
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/indicator"
+            app:indicatorsToShow="4" />
+    </LinearLayout>
+</ScrollView>

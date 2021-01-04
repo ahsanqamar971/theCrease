@@ -1,0 +1,135 @@
+<resources>
+    <string name="app_name">The Crease</string>
+    <string name="title_activity_dash_board">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="score">Score</string>
+    <string name="news">News</string>
+
+    <string name="sex_prompt">Select</string>
+
+    <string-array name="sex_array">
+        <item>Select</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="role_prompt">Select</string>
+
+    <string-array name="role_array">
+        <item>Select</item>
+        <item>Admin</item>
+        <item>Team</item>
+        <item>Umpire</item>
+        <item>Coach</item>
+        <item>Player</item>
+        <item>Scorer</item>
+    </string-array>
+
+    <string name="ball_status_prompt">Select</string>
+
+    <string-array name="ball_status_array">
+        <item>None</item>
+        <item>Legal</item>
+        <item>N</item>
+        <item>Wd</item>
+        <item>b</item>
+        <item>Lb</item>
+    </string-array>
+
+    <string name="runs_prompt">Select</string>
+
+    <string-array name="runs_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string name="dism_type_prompt">Select</string>
+
+    <string-array name="dism_type_array">
+        <item>None</item>
+        <item>Bowled</item>
+        <item>Caught</item>
+        <item>Stump</item>
+        <item>Run Out</item>
+        <item>LBW</item>
+        <item>Retire</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="type_prompt">Select</string>
+
+    <string-array name="type_array">
+        <item>Select</item>
+        <item>Club</item>
+        <item>Franchise</item>
+        <item>University</item>
+        <item>College</item>
+        <item>School</item>
+        <item>Others</item>
+    </string-array>
+
+    <string name="player_role_prompt">Select</string>
+
+    <string-array name="player_role_array">
+        <item>Select</item>
+        <item>Batsman</item>
+        <item>Bowler</item>
+        <item>Wicket Keeper</item>
+        <item>All-rounder</item>
+    </string-array>
+
+    <string name="bat_prompt">Select</string>
+
+    <string-array name="bat_array">
+        <item>Select</item>
+        <item>Top-Order</item>
+        <item>Middle-Order</item>
+        <item>Slodger</item>
+        <item>Flexible</item>
+        <item>Tail-ender</item>
+        <item>None</item>
+    </string-array>
+
+    <string name="bowl_prompt">Select</string>
+
+    <string-array name="bowl_array">
+        <item>Select</item>
+        <item>Off spinner</item>
+        <item>Leg spinner</item>
+        <item>Chinaman</item>
+        <item>Fast</item>
+        <item>Fas-Med</item>
+        <item>Medium</item>
+        <item>Orthodox</item>
+        <item>None</item>
+    </string-array>
+
+    <string name="pre_prompt">Select</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="loading">Loading</string>
+    <string name="thankyou">We have received all your application. Now, please provide us all the necessary data that you have provided us at thecrease6@gmail.com.\nNote: You can also email inquire about your application status after waiting for 48 hours. However, we try to get back to you email, before that.</string>
+    <string name="store">Store</string>
+    <string name="welcome_note">Welcome to The Crease app. Do you have any cricket background and want to recognize you in the cricket world? You are on the right platform. Register as an Umpire/Player/Scorer/Coach/Admin/Writer/Team. And Let\'s play together.</string>
+
+    <string-array name="pre_array">
+        <item>Select</item>
+        <item>Work from home</item>
+        <item>Office</item>
+        <item>Flexible</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msgFailedToUplod">Failed to upload</string>
+    <string name="opposition_prompt">Select</string>
+
+</resources>

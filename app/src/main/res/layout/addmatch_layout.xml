@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/sendReqBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cantata_one"
+            android:text="Date:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="0.7"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:fontFamily="@font/cantata_one"
+                android:gravity="center"
+                android:id="@+id/date"
+                android:hint="DD"
+                android:inputType="number"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_background" />
+            <EditText
+                android:fontFamily="@font/cantata_one"
+                android:gravity="center"
+                android:id="@+id/month"
+                android:hint="MM"
+                android:inputType="number"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_background" />
+            <EditText
+                android:fontFamily="@font/cantata_one"
+                android:gravity="center"
+                android:id="@+id/year"
+                android:hint="YYYY"
+                android:inputType="number"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_background" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cantata_one"
+            android:text="Slot:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:fontFamily="@font/cantata_one"
+                android:gravity="center"
+                android:id="@+id/hour"
+                android:hint="HH"
+                android:inputType="number"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_background" />
+            <EditText
+                android:fontFamily="@font/cantata_one"
+                android:gravity="center"
+                android:id="@+id/min"
+                android:hint="MM"
+                android:inputType="number"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_background" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cantata_one"
+            android:text="Overs:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <EditText
+            android:fontFamily="@font/cantata_one"
+            android:gravity="start|center"
+            android:id="@+id/overs"
+            android:paddingStart="10dp"
+            android:hint="Enter here"
+            android:layout_weight="0.5"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/et_background" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cantata_one"
+            android:text="Venue:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <EditText
+            android:fontFamily="@font/cantata_one"
+            android:gravity="start|center"
+            android:id="@+id/addVenue"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:hint="Enter here"
+            android:layout_weight="0.5"
+            android:inputType="textCapWords"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/et_background" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cantata_one"
+            android:text="Opposition:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <Spinner
+            android:layout_weight="0.5"
+            android:prompt="@string/opposition_prompt"
+            android:id="@+id/oppSpinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/spinner_bg"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cantata_one"
+            android:text="Umpire 1:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <Spinner
+            android:layout_weight="0.5"
+            android:prompt="@string/opposition_prompt"
+            android:id="@+id/umpire1Spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/spinner_bg"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cantata_one"
+            android:text="Umpire 2:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <Spinner
+            android:layout_weight="0.5"
+            android:prompt="@string/opposition_prompt"
+            android:id="@+id/umpire2Spinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/spinner_bg"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cantata_one"
+            android:text="Scorer:"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <Spinner
+            android:layout_weight="0.5"
+            android:prompt="@string/opposition_prompt"
+            android:id="@+id/scorerSpinner"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/spinner_bg"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/sendReqBtn"
+        android:text="Send Request"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

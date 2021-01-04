@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:textAlignment="center"
+        android:id="@+id/playInnerLayout"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@drawable/news_text_bg"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amiko"
+            android:textSize="15sp"
+            android:id="@+id/squad"
+            android:text="Squad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:background="@drawable/news_text_bg"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amiko"
+            android:textSize="15sp"
+            android:id="@+id/tournaments"
+            android:text="Tournaments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:background="@drawable/news_text_bg"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amiko"
+            android:textSize="15sp"
+            android:id="@+id/fixtures"
+            android:text="Fixtures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_above="@+id/editBtn"
+        android:layout_alignParentTop="true"
+        android:weightSum="2"
+        android:id="@+id/squadLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@drawable/news_text_bg"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:fontFamily="@font/cantata_one"
+                android:textSize="14sp"
+                android:text="Default XI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/defSqRecyclerView"
+                tools:listitem="@layout/default_squad_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@drawable/news_text_bg"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:fontFamily="@font/cantata_one"
+                android:textSize="14sp"
+                android:text="Squad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/squadRecyclerView"
+                tools:listitem="@layout/default_squad_item2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/team_tourn_RV"
+            android:visibility="gone"
+            tools:listitem="@layout/team_tour_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/editBtn"/>
+        <TextView
+            android:id="@+id/noMoreData"
+            android:text="No More Data"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:fontFamily="@font/cantata_one"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/addBtn"
+            android:id="@+id/tournRecyclerView"
+            android:visibility="gone"
+            tools:listitem="@layout/team_tourn_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editBtn"/>
+
+            <include
+                layout="@layout/addmatch_layout"
+                android:id="@+id/addMatchLayout"
+                android:visibility="gone" />
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:id="@+id/addBtn"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_add_circle_outline_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

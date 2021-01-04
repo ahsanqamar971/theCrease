@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:weightSum="3"
+    android:background="@drawable/news_text_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:text=""
+        android:layout_weight="0.2"
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/srNo"
+        android:textSize="11sp"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/amiko"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/playerTv"
+        android:textSize="11sp"
+        android:layout_width="0dp"
+        android:fontFamily="@font/amiko"
+        android:layout_height="45dp"
+        android:layout_weight="1.3"
+        android:gravity="start|center"
+        android:text="Player"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/role"
+        android:textSize="11sp"
+        android:layout_width="0dp"
+        android:fontFamily="@font/amiko"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="start|center"
+        android:text="RHB"
+        android:textColor="@color/black" />
+
+</LinearLayout>

@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/dummy_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <LinearLayout
+        android:layout_toEndOf="@id/profileImage"
+        android:id="@+id/profileLayout"
+        android:padding="10dp"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:id="@+id/name"
+            android:drawablePadding="10dp"
+            android:gravity="start|center"
+            android:text="Adeel Aslam"
+            android:textSize="16sp"
+            android:fontFamily="@font/cantata_one"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/ic_baseline_history_24"
+            android:id="@+id/age"
+            android:drawablePadding="10dp"
+            android:gravity="start|center"
+            android:text="21 Year"
+            android:textSize="16sp"
+            android:fontFamily="@font/cantata_one"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:drawableStart="@drawable/ic_baseline_pin_drop_24"
+            android:id="@+id/city"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="start|center"
+            android:text="Lahore"
+            android:textSize="16sp"
+            android:fontFamily="@font/cantata_one"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:id="@+id/email"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="start|center"
+            android:text="abc@example.com"
+            android:textSize="16sp"
+            android:fontFamily="@font/cantata_one"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:drawableStart="@drawable/ic_baseline_local_phone_24"
+            android:id="@+id/phone"
+            android:drawablePadding="10dp"
+            android:gravity="start|center"
+            android:text="+921234567890"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/cantata_one"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:drawableStart="@drawable/ic_baseline_people_24"
+            android:id="@+id/team"
+            android:drawablePadding="10dp"
+            android:gravity="start|center"
+            android:text="LQ"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/cantata_one"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:drawableStart="@drawable/ic_baseline_wc_24"
+            android:id="@+id/gender"
+            android:drawablePadding="10dp"
+            android:gravity="start|center"
+            android:text="Male"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/cantata_one"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="start|center"
+                android:text="Role: "
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/role"
+                android:gravity="start|center"
+                android:text="RHB"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/batHandLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/batHandTV"
+                android:gravity="start|center"
+                android:text="Bat Hand: "
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/batHand"
+                android:gravity="start|center"
+                android:text="RHB"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/batStyleLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/batStyleTV"
+                android:gravity="start|center"
+                android:text="Bat Style: "
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/batStyle"
+                android:gravity="start|center"
+                android:text="RHB"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bowlHandLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/bowlHandTV"
+                android:gravity="start|center"
+                android:text="Bowl Hand: "
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/bowlHand"
+                android:gravity="start|center"
+                android:text="RHB"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bowlStyleLayout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/bowlStyleTV"
+                android:gravity="start|center"
+                android:text="Bowl Style: "
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/bowlStyle"
+                android:gravity="start|center"
+                android:text="RHB"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/profileLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@drawable/news_text_bg"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amiko"
+            android:textSize="13sp"
+            android:id="@+id/t20TV"
+            android:text="T20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:background="@drawable/news_text_bg"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amiko"
+            android:textSize="13sp"
+            android:id="@+id/t10TV"
+            android:text="T10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amiko"
+            android:textSize="13sp"
+            android:background="@drawable/news_text_bg"
+            android:id="@+id/otherTV"
+            android:text="Others"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="@drawable/news_text_bg"
+                android:padding="10dp"
+                android:gravity="start|center"
+                android:layout_weight="2"
+                android:textColor="@color/black"
+                android:fontFamily="@font/amiko"
+                android:textSize="16sp"
+                android:id="@+id/debutTV"
+                android:text="Debut: UET 2017\nRecent: GIKI 2020"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:background="@drawable/news_text_bg"
+                android:padding="5dp"
+                android:gravity="start|center"
+                android:paddingStart="10dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:fontFamily="@font/amiko"
+                android:textSize="16sp"
+                android:id="@+id/matchesTV"
+                android:text="Matches: 97"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="3"
+                    android:background="@drawable/news_text_bg"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:gravity="start|center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/amiko"
+                        android:textSize="12sp"
+                        android:id="@+id/runs"
+                        android:text="Runs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:paddingStart="10dp"
+                        android:gravity="start|center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/amiko"
+                        android:textSize="20sp"
+                        android:id="@+id/runsTV"
+                        android:text="1678"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:gravity="end|center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/amiko"
+                        android:textSize="15sp"
+                        android:id="@+id/rankTV"
+                        android:text="Rank: 9th"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:background="@drawable/news_text_bg"
+                            android:padding="10dp"
+                            android:gravity="start|center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/amiko"
+                            android:textSize="16sp"
+                            android:id="@+id/avgTV"
+                            android:text="AVG: 49.8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:background="@drawable/news_text_bg"
+                            android:padding="10dp"
+                            android:gravity="start|center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/amiko"
+                            android:textSize="16sp"
+                            android:id="@+id/inningsTV"
+                            android:text="Innings: 42"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:background="@drawable/news_text_bg"
+                            android:padding="10dp"
+                            android:gravity="start|center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/amiko"
+                            android:textSize="16sp"
+                            android:id="@+id/srTV"
+                            android:text="SR: 198.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:background="@drawable/news_text_bg"
+                            android:padding="10dp"
+                            android:gravity="start|center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/amiko"
+                            android:textSize="16sp"
+                            android:id="@+id/hsTV"
+                            android:text="HS: 113"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:background="@drawable/news_text_bg"
+                            android:padding="10dp"
+                            android:gravity="start|center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/amiko"
+                            android:textSize="16sp"
+                            android:id="@+id/hunderedTV"
+                            android:text="100: 4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:background="@drawable/news_text_bg"
+                            android:padding="10dp"
+                            android:gravity="start|center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/amiko"
+                            android:textSize="16sp"
+                            android:id="@+id/fiftyTV"
+                            android:text="50: 30"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:background="@drawable/news_text_bg"
+                            android:padding="10dp"
+                            android:gravity="start|center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/amiko"
+                            android:textSize="16sp"
+                            android:id="@+id/bowlAVGTV"
+                            android:text="AVG: 49.8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:background="@drawable/news_text_bg"
+                            android:padding="10dp"
+                            android:gravity="start|center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/amiko"
+                            android:textSize="16sp"
+                            android:id="@+id/econTV"
+                            android:text="ECON: 4.9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:background="@drawable/news_text_bg"
+                            android:padding="10dp"
+                            android:gravity="start|center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/amiko"
+                            android:textSize="16sp"
+                            android:id="@+id/bowlSRTV"
+                            android:text="SR: 198.3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:background="@drawable/news_text_bg"
+                            android:padding="10dp"
+                            android:gravity="start|center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/amiko"
+                            android:textSize="16sp"
+                            android:id="@+id/bbTV"
+                            android:text="BB: 5/19"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:background="@drawable/news_text_bg"
+                            android:padding="10dp"
+                            android:gravity="start|center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/amiko"
+                            android:textSize="16sp"
+                            android:id="@+id/threeWicketsTV"
+                            android:text="3s: 4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:background="@drawable/news_text_bg"
+                            android:padding="10dp"
+                            android:gravity="start|center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/amiko"
+                            android:textSize="16sp"
+                            android:id="@+id/fiveWicketsTV"
+                            android:text="5s: 30"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:background="@drawable/news_text_bg"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:padding="10dp"
+                        android:gravity="start|center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/amiko"
+                        android:textSize="12sp"
+                        android:text="Wkts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:paddingStart="10dp"
+                        android:gravity="start|center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/amiko"
+                        android:textSize="20sp"
+                        android:id="@+id/wicketsTV"
+                        android:text="167"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:padding="10dp"
+                        android:gravity="end|center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/amiko"
+                        android:textSize="15sp"
+                        android:id="@+id/bowlRankTV"
+                        android:text="Rank: 19th"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:background="@drawable/news_text_bg"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:weightSum="2"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:paddingStart="10dp"
+                        android:gravity="start|center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/amiko"
+                        android:textSize="20sp"
+                        android:text="Wicket Keeping"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:gravity="end|center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/amiko"
+                        android:textSize="15sp"
+                        android:id="@+id/wkRankTV"
+                        android:text="Rank: N/A"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:background="@drawable/news_text_bg"
+                            android:padding="10dp"
+                            android:gravity="start|center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/amiko"
+                            android:textSize="16sp"
+                            android:id="@+id/catchesTV"
+                            android:text="Catches: N/A"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:background="@drawable/news_text_bg"
+                            android:padding="10dp"
+                            android:gravity="start|center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/amiko"
+                            android:textSize="16sp"
+                            android:id="@+id/stumpsTV"
+                            android:text="Stumps: N/A"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:background="@drawable/news_text_bg"
+                            android:padding="10dp"
+                            android:gravity="start|center"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/amiko"
+                            android:textSize="16sp"
+                            android:id="@+id/runOutTV"
+                            android:text="RunOut: N/A"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:background="@drawable/news_text_bg"
+                        android:padding="10dp"
+                        android:gravity="start|center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/amiko"
+                        android:textSize="16sp"
+                        android:id="@+id/fcatchesTV"
+                        android:text="Catches: 35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:background="@drawable/news_text_bg"
+                        android:padding="10dp"
+                        android:gravity="start|center"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/amiko"
+                        android:textSize="16sp"
+                        android:id="@+id/frunoutTV"
+                        android:text="RunOut: 5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:background="@drawable/news_text_bg"
+                    android:layout_weight="1"
+                    android:paddingStart="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/amiko"
+                    android:textSize="20sp"
+                    android:text="Fielding"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingStart="10dp"
+                    android:gravity="start|center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/amiko"
+                    android:textSize="20sp"
+                    android:text="Other Achivements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:background="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"/>
+
+                <LinearLayout
+                    android:paddingStart="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/captain"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/amiko"
+                        android:text="Captain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <CheckBox
+                        android:id="@+id/viceCaptain"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/amiko"
+                        android:text="Captain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:paddingStart="10dp"
+                    android:gravity="start|center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/amiko"
+                    android:textSize="20sp"
+                    android:id="@+id/allRounderRankTV"
+                    android:text="All Rounder Rank: 9th"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingStart="10dp"
+                    android:gravity="start|center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/amiko"
+                    android:textSize="20sp"
+                    android:id="@+id/momAwardTV"
+                    android:text="MOM Awards: 5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:paddingStart="10dp"
+                    android:gravity="start|center"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/amiko"
+                    android:textSize="20sp"
+                    android:id="@+id/mosAwardTV"
+                    android:text="MOS Awards: 4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

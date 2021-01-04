@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_alignParentStart="true"
+            android:id="@+id/leagueName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/cantata_one"
+            android:gravity="center"
+            android:text="Pakistan Super League"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/newsMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_action_more" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/articleImage"
+            android:src="@drawable/dummy_image"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:id="@+id/writerName"
+            android:background="@drawable/lefttext_bg"
+            android:text="Adeel Aslam"
+            android:textColor="@color/white"
+            android:fontFamily="@font/amiko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:id="@+id/dateTimeTV"
+            android:background="@drawable/righttext_bg"
+            android:text="23 May"
+            android:fontFamily="@font/amiko"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/news_text_bg"
+        android:id="@+id/articleTitle"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:fontFamily="@font/cantata_one"
+        android:textColor="@color/black"
+        android:text="Ian Gold: Modern umpires have thrown away their ego"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

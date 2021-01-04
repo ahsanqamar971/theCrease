@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.github.islamkhsh.CardSliderViewPager
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewPager"
+        app:cardSlider_indicator="@id/indicator"
+        app:auto_slide_time="5"/>
+    <com.github.islamkhsh.CardSliderIndicator
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/indicator"
+        app:indicatorsToShow="4" />
+
+        <com.github.islamkhsh.CardSliderViewPager
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewPager2"
+            app:cardSlider_indicator="@id/indicator2"/>
+        <com.github.islamkhsh.CardSliderIndicator
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/indicator2"
+            app:indicatorsToShow="4" />
+
+    <include layout="@layout/registerlayout"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include layout="@layout/contactus_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>

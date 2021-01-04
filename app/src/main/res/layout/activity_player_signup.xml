@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup.PlayerSignUpActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cantata_one"
+            android:text="Sign Up"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiko"
+            android:text="Hello"
+            android:paddingEnd="10dp"
+            android:id="@+id/nameTv"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <TextView
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="We appreciate your willingness to join our platform and make it big in cricket world."
+            android:textSize="15sp"/>
+
+        <TextView
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiko"
+            android:text="CRITERIA:"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Must currently be playing for some registered team."
+            android:paddingEnd="10dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Please add the following details to complete your registration."
+            android:paddingEnd="10dp"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="ROLE:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <Spinner
+                android:layout_weight="0.5"
+                android:prompt="@string/player_role_prompt"
+                android:entries="@array/player_role_array"
+                android:id="@+id/roleSpinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/spinner_bg"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="BAT HAND:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_weight="0.5"
+                android:id="@+id/batTypeRG"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/batleftRB"
+                    android:layout_weight="1"
+                    android:text="Left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/batrightRB"
+                    android:layout_weight="1"
+                    android:text="Right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="0.4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="BOWL HAND:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_weight="0.6"
+                android:id="@+id/bowlTypeRG"
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/bowlleftRB"
+                    android:layout_weight="1"
+                    android:text="Left"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/bowlrightRB"
+                    android:layout_weight="1"
+                    android:text="Right"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/bowlnoneRB"
+                    android:layout_weight="1"
+                    android:text="None"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="BAT TYPE:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <Spinner
+                android:layout_weight="0.5"
+                android:prompt="@string/bat_prompt"
+                android:entries="@array/bat_array"
+                android:id="@+id/batSpinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/spinner_bg"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="BOWL TYPE:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <Spinner
+                android:layout_weight="0.5"
+                android:prompt="@string/bowl_prompt"
+                android:entries="@array/bowl_array"
+                android:id="@+id/bowlSpinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/spinner_bg"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="TEAM:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+            <Spinner
+                android:layout_weight="0.5"
+                android:prompt="@string/sex_prompt"
+                android:id="@+id/teamSpinner"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/spinner_bg"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="MOBILE:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_weight="0.5"
+                android:id="@+id/number"
+                android:hint="03xx-xxxxxxx"
+                android:paddingStart="10dp"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:inputType="number"
+                android:background="@drawable/et_background" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/backBtn"
+            android:text="Back"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/cantata_one"
+            android:background="@drawable/btn_bg"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/applyBtn"
+            android:text="Apply"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:fontFamily="@font/cantata_one"
+            android:background="@drawable/btn_bg"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

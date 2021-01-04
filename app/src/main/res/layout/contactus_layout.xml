@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Contact Us"
+        android:textColor="@color/black"
+        android:fontFamily="@font/cantata_one"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="Please share your concern &amp; queries. We will get back to you soon. "
+        android:textColor="@color/black"
+        android:fontFamily="@font/amiko"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="0.5"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="Name:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:layout_weight="0.5"
+                    android:id="@+id/name"
+                    android:hint="Enter here"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:inputType="text"
+                    android:background="@drawable/et_background" />
+
+            </LinearLayout>
+                <LinearLayout
+                    android:weightSum="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="0.5"
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/cantata_one"
+                        android:text="Email:"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:layout_weight="0.5"
+                        android:id="@+id/email"
+                        android:hint="Enter here"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_margin="5dp"
+                        android:inputType="textEmailAddress"
+                        android:background="@drawable/et_background" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:paddingTop="5dp"
+                    android:layout_weight="1"
+                    android:id="@+id/message"
+                    android:gravity="start"
+                    android:hint="Write your message here"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="5dp"
+                    android:inputType="textMultiLine"
+                    android:maxLines="5"
+                    android:background="@drawable/et_background" />
+
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/sendBtn"
+                android:text="Send"
+                android:layout_gravity="end"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:fontFamily="@font/cantata_one"
+                android:background="@drawable/btn_bg"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+</LinearLayout>

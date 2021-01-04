@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_marginTop="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/noData"
+        android:text="No Data Found"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:fontFamily="@font/cantata_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:text="Registration Requests"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/requestRecyclerView"
+        tools:listitem="@layout/reg_req_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

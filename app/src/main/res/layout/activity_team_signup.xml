@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cantata_one"
+            android:text="Sign Up"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiko"
+            android:text="Hello"
+            android:paddingEnd="10dp"
+            android:id="@+id/nameTv"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <TextView
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="We appreciate your willingness to join our platform and make it big in cricket world."
+            android:textSize="15sp"/>
+        <TextView
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amiko"
+            android:text="CRITERIA:"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Minimum 15 players squad.\nMinimum 2 member of coaching staff.\nMust have home-ground facility."
+            android:paddingEnd="10dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Please add the following details to complete your registration."
+            android:paddingEnd="10dp"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="start|center"
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="Player's Squad(min):"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/negCounter"
+                    android:padding="5dp"
+                    android:text="-"
+                    android:textSize="35sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <EditText
+                android:fontFamily="@font/cantata_one"
+                android:gravity="center"
+                android:id="@+id/squadNumber"
+                android:hint="15"
+                android:text="15"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_background" />
+                <TextView
+                    android:id="@+id/plusCounter"
+                    android:padding="5dp"
+                    android:text="+"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="start|center"
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="Coaching Staff(min):"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/cnegCounter"
+                    android:padding="5dp"
+                    android:text="-"
+                    android:textSize="35sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:fontFamily="@font/cantata_one"
+                    android:gravity="center"
+                    android:id="@+id/coachNumber"
+                    android:hint="2"
+                    android:text="2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/et_background" />
+                <TextView
+                    android:id="@+id/cplusCounter"
+                    android:padding="5dp"
+                    android:text="+"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="start|center"
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="Pitches:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/pnegCounter"
+                    android:padding="5dp"
+                    android:text="-"
+                    android:textSize="35sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <EditText
+                    android:fontFamily="@font/cantata_one"
+                    android:gravity="center"
+                    android:id="@+id/pitchesNumber"
+                    android:hint="1"
+                    android:text="1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/et_background" />
+                <TextView
+                    android:id="@+id/paddCounter"
+                    android:padding="5dp"
+                    android:text="+"
+                    android:textSize="25sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="Home Ground Facility:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_weight="0.5"
+                android:id="@+id/hgfRG"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/yesRB"
+                    android:layout_weight="1"
+                    android:text="Yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/noRB"
+                    android:layout_weight="1"
+                    android:text="No"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="Type:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:layout_weight="0.5"
+                android:prompt="@string/type_prompt"
+                android:entries="@array/type_array"
+                android:id="@+id/typeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/spinner_bg"
+                android:spinnerMode="dropdown" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="Venue:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_weight="0.5"
+                android:id="@+id/venue"
+                android:hint="Complete Address here"
+                android:paddingStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:inputType="textCapSentences"
+                android:background="@drawable/et_background" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cantata_one"
+                android:text="MOBILE:"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_weight="0.5"
+                android:id="@+id/number"
+                android:hint="03xx-xxxxxxx"
+                android:paddingStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/et_background" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/backBtn"
+                android:text="Back"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:fontFamily="@font/cantata_one"
+                android:background="@drawable/btn_bg"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_weight="1"
+                android:id="@+id/applyBtn"
+                android:text="Apply"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:fontFamily="@font/cantata_one"
+                android:background="@drawable/btn_bg"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

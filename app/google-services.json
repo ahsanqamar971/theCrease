@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "331216110488",
+    "firebase_url": "https://the-crease.firebaseio.com",
+    "project_id": "the-crease",
+    "storage_bucket": "the-crease.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331216110488:android:22619d64dc77b7c65c21ed",
+        "android_client_info": {
+          "package_name": "com.limecoders.thecrease"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331216110488-30d3b03dt3h1atenmo1vitn2dlj54tcc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjagBE0XP7J6ryaWt6e3gxWskhl5qCd7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "331216110488-30d3b03dt3h1atenmo1vitn2dlj54tcc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

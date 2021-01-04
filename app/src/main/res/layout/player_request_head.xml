@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:weightSum="7"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/srNo"
+        android:textSize="13sp"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Sr. No"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/playerTV"
+        android:textSize="13sp"
+        android:layout_width="0dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Player"
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/rankTV"
+        android:textSize="13sp"
+        android:layout_width="0dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Rank"
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/batTV"
+        android:layout_width="0dp"
+        android:textSize="13sp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Bat"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/bowlTV"
+        android:layout_width="0dp"
+        android:textSize="13sp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Bowl"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/yesTV"
+        android:layout_width="0dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="13sp"
+        android:text="Accept"
+        android:textColor="#ffffff" />
+    <TextView
+        android:id="@+id/tTV"
+        android:layout_width="0dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:text="Decline"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

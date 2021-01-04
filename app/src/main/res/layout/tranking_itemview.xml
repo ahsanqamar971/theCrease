@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:weightSum="5"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/posTV"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/amiko"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/teamTV"
+        android:fontFamily="@font/amiko"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="MS"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/matchTV"
+        android:fontFamily="@font/amiko"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="26"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/ptsTV"
+        android:layout_width="0dp"
+        android:fontFamily="@font/amiko"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="40"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/ratingTV"
+        android:fontFamily="@font/amiko"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="116"
+        android:textColor="@color/black" />
+
+</LinearLayout>

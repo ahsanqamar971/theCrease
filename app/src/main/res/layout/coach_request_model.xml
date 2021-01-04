@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:padding="5dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/cantata_one"
+        android:textSize="18sp"
+        android:id="@+id/matches"
+        android:text="Matches Request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/coach_Req_RecyclerView"
+        tools:listitem="@layout/team_request_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

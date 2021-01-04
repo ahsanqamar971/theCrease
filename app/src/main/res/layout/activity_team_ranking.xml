@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TeamRankingActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@drawable/news_text_bg"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amiko"
+            android:textSize="15sp"
+            android:id="@+id/club"
+            android:text="Club"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:background="@drawable/news_text_bg"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amiko"
+            android:textSize="15sp"
+            android:id="@+id/uni"
+            android:text="Universities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:fontFamily="@font/amiko"
+            android:textSize="15sp"
+            android:background="@drawable/news_text_bg"
+            android:id="@+id/others"
+            android:text="Others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="T20"
+            android:textColor="@color/black"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/cantata_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/t20updatedTV"
+            android:text="(Last Updated\n7-Apr-2020)"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/cantata_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/t20_recyclerView"
+        tools:listitem="@layout/tranking_itemview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="T10"
+            android:textColor="@color/black"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/cantata_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/t10updatedTV"
+            android:text="(Last Updated\n7-Apr-2020)"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/cantata_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/t10_recyclerView"
+        tools:listitem="@layout/tranking_itemview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="One Day"
+            android:textColor="@color/black"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/cantata_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/oneDayupdatedTV"
+            android:text="(Last Updated\n7-Apr-2020)"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/cantata_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/oneDay_recyclerView"
+        tools:listitem="@layout/tranking_itemview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Other"
+            android:textColor="@color/black"
+            android:layout_alignParentStart="true"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/cantata_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/otherupdatedTV"
+            android:text="(Last Updated\n7-Apr-2020)"
+            android:textColor="@color/black"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/cantata_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/other_recyclerView"
+        tools:listitem="@layout/tranking_itemview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.StartMatchbActivity">
+        <Button
+            android:layout_alignParentTop="true"
+            android:id="@+id/endInnings"
+            android:text="End Innings"
+            android:textAllCaps="false"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_below="@id/endInnings"
+            android:layout_above="@id/saveBall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="1st Innings"
+                android:padding="5dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:id="@+id/innings1"
+                android:text="0-0 (0.0) LQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:id="@+id/innings2"
+                android:text="Yet To Bat\t\t\t\tKK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="visible"
+                android:id="@+id/matchDetRecyclerView"
+                tools:listitem="@layout/match_detail_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:id="@+id/currentOver"
+                    android:text="19th"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <Spinner
+                    android:layout_weight="0.5"
+                    android:prompt="@string/ball_status_prompt"
+                    android:id="@+id/bowlerSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/spinner_bg"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/overRecyclerView"
+                android:visibility="visible"
+                tools:listitem="@layout/over_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="10dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="BALL STATUS:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <Spinner
+                    android:layout_weight="0.5"
+                    android:prompt="@string/ball_status_prompt"
+                    android:entries="@array/ball_status_array"
+                    android:id="@+id/ballStatSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/spinner_bg"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="10dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="Runs:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <Spinner
+                    android:layout_weight="0.5"
+                    android:prompt="@string/runs_prompt"
+                    android:entries="@array/runs_array"
+                    android:id="@+id/runsSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/spinner_bg"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="10dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="DISMISSAL TYPE:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <Spinner
+                    android:layout_weight="0.5"
+                    android:prompt="@string/dism_type_prompt"
+                    android:entries="@array/dism_type_array"
+                    android:id="@+id/dismissTypeSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/spinner_bg"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="10dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="DISMISSED BAT:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:layout_weight="0.5"
+                    android:id="@+id/batRG"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/bat1"
+                        android:layout_weight="1"
+                        android:text="Batsman 1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <RadioButton
+                        android:id="@+id/bat2"
+                        android:layout_weight="1"
+                        android:text="Batsman 2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="10dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="FIELDER:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <Spinner
+                    android:layout_weight="0.5"
+                    android:prompt="@string/dism_type_prompt"
+                    android:id="@+id/fielderSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/spinner_bg"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="10dp"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cantata_one"
+                    android:text="NEW BAT:"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <Spinner
+                    android:layout_weight="0.5"
+                    android:prompt="@string/dism_type_prompt"
+                    android:id="@+id/newBatSpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/spinner_bg"
+                    android:spinnerMode="dropdown" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:id="@+id/saveBall"
+            android:text="Save Ball"
+            android:textAllCaps="false"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

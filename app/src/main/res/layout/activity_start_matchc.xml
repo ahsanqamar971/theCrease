@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.StartMatchcActivity">
+
+    <TextView
+        android:text="1st Innings Result"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/cantata_one"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/firstInnings"
+        android:text="LQ\t\t\t191-3"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/cantata_one"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="1st Innings Result"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/cantata_one"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/target"
+        android:text="Target: 192"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/cantata_one"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/overs"
+        android:text="Overs: 20"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/cantata_one"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/startSecondInnings"
+        android:text="Start 2nd Innings"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/endMatch"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="End Match"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

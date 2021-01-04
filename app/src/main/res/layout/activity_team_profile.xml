@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.TeamProfileActivity">
+
+    <ImageView
+        android:id="@+id/teamImage"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/dummy_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_toStartOf="@id/teamImage"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="start|center"
+                android:text="Name: "
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/teamName"
+                android:gravity="start|center"
+                android:text="Lahore Qalandar"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="start|center"
+                android:text="Level: "
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/level"
+                android:gravity="start|center"
+                android:text="Club"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <TextView
+            android:drawableStart="@drawable/ic_baseline_pin_drop_24"
+            android:id="@+id/city"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="start|center"
+            android:text="Lahore"
+            android:textSize="16sp"
+            android:fontFamily="@font/cantata_one"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:id="@+id/email"
+            android:layout_marginTop="10dp"
+            android:drawablePadding="10dp"
+            android:gravity="start|center"
+            android:text="abc@example.com"
+            android:textSize="16sp"
+            android:fontFamily="@font/cantata_one"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:drawableStart="@drawable/ic_baseline_local_phone_24"
+            android:id="@+id/phone"
+            android:drawablePadding="10dp"
+            android:gravity="start|center"
+            android:text="+921234567890"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/cantata_one"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="start|center"
+                android:text="Captain: "
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/capName"
+                android:gravity="start|center"
+                android:text="Ali Raza"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="start|center"
+                android:text="Squad Members: "
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/squadNumber"
+                android:gravity="start|center"
+                android:text="15"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="start|center"
+                android:text="Coaching Staff: "
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/coachNumber"
+                android:gravity="start|center"
+                android:text="2"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="start|center"
+                android:text="Venue: "
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/venue"
+                android:gravity="start|center"
+                android:text="Sabzazaar Stadium"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"
+                android:fontFamily="@font/cantata_one"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/squad"
+        android:layout_below="@id/layout"
+        android:gravity="start|center"
+        android:text="Team Squad"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/cantata_one"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/squad"
+        android:layout_marginTop="10dp"
+        android:id="@+id/squadRecyclerView"
+        tools:listitem="@layout/player_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

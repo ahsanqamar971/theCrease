@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:weightSum="9"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/rankTV"
+        android:textSize="12sp"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Rank"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/teamTV"
+        android:textSize="12sp"
+        android:layout_width="0dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Team"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/mTV"
+        android:textSize="12sp"
+        android:layout_width="0dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="M"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/wTV"
+        android:layout_width="0dp"
+        android:textSize="12sp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="W"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/lTV"
+        android:layout_width="0dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:text="L"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/tTV"
+        android:layout_width="0dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:text="T"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/nrTV"
+        android:layout_width="0dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:text="N/R"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/ptsTV"
+        android:layout_width="0dp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:text="Pts"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/nrrTV"
+        android:textSize="12sp"
+        android:fontFamily="@font/cantata_one"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="NRR"
+        android:textColor="@color/black" />
+
+</LinearLayout>

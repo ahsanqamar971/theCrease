@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_alignParentStart="true"
+            android:id="@+id/leagueName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/cantata_one"
+            android:gravity="center"
+            android:text="Pakistan Super League"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg">
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="20 Overs"
+                android:id="@+id/oversTV"
+                android:padding="10dp"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/white"
+                android:fontFamily="@font/cantata_one"
+                android:background="@drawable/text_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Karachi"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/matchVenue"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/cantata_one"
+                android:background="@drawable/text_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/team1Image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/dummy_image"/>
+
+                <TextView
+                    android:id="@+id/team1Name"
+                    android:padding="5dp"
+                    android:text="MS"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="@font/cantata_one"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="VS"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/cantata_one"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/team2Image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/dummy_image"/>
+
+                <TextView
+                    android:id="@+id/team2Name"
+                    android:padding="5dp"
+                    android:text="MS"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="@font/cantata_one"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/dateTimeTV"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="12-May, 2:00 PM"
+            android:textSize="16sp"
+            android:fontFamily="@font/cantata_one"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:background="@drawable/news_text_bg"
+            android:text="Cancel Match"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
